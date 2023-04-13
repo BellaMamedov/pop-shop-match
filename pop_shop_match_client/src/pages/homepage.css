@@ -1,0 +1,20 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+#root {
+    
+  background: linear-gradient(180deg, #F2E2E2 0%, rgba(255, 238, 238, 0) 100%);
+  }
+
+
+  h1 {
+    margin: 1rem auto 4rem;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+  
+  }
+  
+  .app-slogan {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+
+  }

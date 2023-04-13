@@ -1,12 +1,12 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import './homePage.css'
+import './homepage.css'
 import "react-multi-carousel/lib/styles.css";
-import AssetCard from "../components/AssetCards/AssetCard";
+import AssetCard from "../components/AssetCards/asset-card-component";
 import {
   assetCardData,
   responsive,
-} from "../components/AssetCards/AsstCardData";
+} from "../components/AssetCards/asst-card-data";
 
 function Homepage() {
   const assets = assetCardData.map((asset) => (
