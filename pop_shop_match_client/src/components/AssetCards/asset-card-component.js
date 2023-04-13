@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../media/assetCard.css';
+import './asset-card.css';
 
 const AssetCard = (props) => {
   return (

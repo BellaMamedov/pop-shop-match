@@ -38,6 +38,7 @@
 
   .navbar-logo {
     width: 100px;
+    margin-left: 10px;
   }
 
   .profile-image {
@@ -50,6 +51,7 @@
   .profile-image img {
     border-radius: 70%;
     width: 60px;
+    margin-right: 10px;
   }
 
   [style*="z-index: 100000"] {
