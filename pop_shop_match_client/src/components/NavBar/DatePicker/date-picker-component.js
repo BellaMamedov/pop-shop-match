@@ -8,7 +8,7 @@ const DateRangePicker = () => {
   console.log(dates);
   return (
     <div style={{ margin: 20 }}>
-      <RangePicker
+      <RangePicker 
         onChange={(values) => {
           setDates(values.map(item => {
               return moment(item).format("YYYY-DD-MM");
