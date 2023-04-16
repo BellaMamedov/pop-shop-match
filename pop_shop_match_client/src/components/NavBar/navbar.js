@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./navbar-media/logo.png";
 import "./navbar.css";
-import DateRangePicker from "./date-picker-component";
+import DateRangePicker from "./DatePicker/date-picker-component";
 
 const Navbar = () => {
   return (
