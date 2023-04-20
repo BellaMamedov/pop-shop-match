@@ -1,0 +1,63 @@
+
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: liner-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%,33%));
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --geryText:rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG: rgb(225,225,235);
+  }
+  
+  .main {
+    width: 100%;
+
+
+    .cards-title-div{
+        .cards-title {
+           position: relative;
+           width: max-content; 
+           color: var(--textColor);
+           margin: 1rem 0;
+           z-index: -1;
+
+           &::after{
+            position: absolute;
+            content: '';
+            background:var(--SecondaryColor);
+            height: 5px;
+            width: 120px;
+            right: 0;
+            bottom: 5px;
+            z-index: -1;
+           }
+        }
+    }
+  }
+.sec-content {
+justify-content: center;
+gap: 1.5rem;
+  }
+
+  @media screen and ( min-width: 500px ){
+   .cards-title{
+    font-size: 1.5rem;
+    &::after{
+      width: 155px !important;
+    }
+   } 
+
+   .sec-content{
+    grid-template-columns: repeat(2,1fr);
+   }
+  }
+
+  @media screen and ( min-width: 840px ){
+    .sec-content{
+     grid-template-columns: repeat(3,1fr);
+    }
+   }

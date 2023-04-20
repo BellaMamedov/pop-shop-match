@@ -1,19 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './index.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/artist-homepage";
-import Navbar from "./components/NavBar/navbar";
+//import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ArtistApp from "./pages/ArtisApp/artist-app";
 
-function App() {
-  return (
-    <BrowserRouter>
-    <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+// function AllApp() {
+//   return (
+//     <BrowserRouter>
+//     <Navbar />
+//       <Routes>
+//         <Route path="/" element={<ArtistHomepage />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const root= ReactDOM.createRoot(document.getElementById("root"));
+root.render(<ArtistApp />);
