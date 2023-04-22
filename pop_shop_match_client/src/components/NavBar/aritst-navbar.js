@@ -21,7 +21,7 @@ const ArtistNavbar = () => {
     <section className="navbar-section">
       <header className="artist-header grid">
         <div className="logo-div">
-          <a href="#" className="logo flex">
+          <a href="/" className="logo flex">
             <h1><MdDiversity2 className="icon" /> PoPShopMatch.</h1>
           </a>
         </div>
@@ -44,10 +44,10 @@ const ArtistNavbar = () => {
               </a>
             </li>
             <button className="btn">
-              <a href="#">Login</a>
+              <a href="/login">Login</a>
             </button>
             <button className="btn">
-              <a href="#">Register</a>
+              <a href="/register">Register</a>
             </button>
           </ul>
 
