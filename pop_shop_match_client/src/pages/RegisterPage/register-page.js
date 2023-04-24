@@ -1,13 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineUnlock } from "react-icons/ai";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
+import axios from 'axios';
 import video from "../../Components/AssetCards/asset-card-media/stores-media/streetview.mp4";
 import "./register-page.scss";
 
 const RegisterPage = () => {
+
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [password, setPassword] = useState('');
+
+
+
+const onchangeHandlerName = (event) => {
+setName(event.target.value);
+}
+
+const onchangeHandlerEmail =(event) => {
+  setEmail(event.target.value);
+  }
+
+  const onchangeHandlerPassword =(event) => {
+    setPassword(event.target.value);
+    }
+
+const registerUser = (event) => {
+  event.preventDefault();
+axios.post('/register', {
+name,
+email,
+password
+});
+}
+
+
   return (
     <section className="register-section">
       <video className="register-video" autoPlay muted loop>
@@ -21,14 +51,14 @@ const RegisterPage = () => {
               <p>Plase provide the following to verify your identity</p>
             </div>
 
-            <form action="#">
+            <form onSubmit={registerUser}>
               <div className="input-box">
                 <span className="icon">
                   <i>
                     <AiOutlineUser />
                   </i>
                 </span>
-                <input type="text" required />
+                <input type="text" value={name} onChange={onchangeHandlerName}  />
                 <label>Full Name</label>
               </div>
               <div className="input-box">
@@ -37,7 +67,7 @@ const RegisterPage = () => {
                     <HiOutlineMail />
                   </i>
                 </span>
-                <input type="password" required />
+                <input type="email" value={email} onChange={onchangeHandlerEmail} />
                 <label>Email</label>
               </div>
 
@@ -47,7 +77,7 @@ const RegisterPage = () => {
                     <AiOutlineUnlock />
                   </i>
                 </span>
-                <input type="password" required />
+                <input type="password" value={password} onChange={onchangeHandlerPassword} />
                 <label>Password</label>
               </div>
 
