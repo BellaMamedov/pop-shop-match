@@ -5,6 +5,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ArtistApp from "./pages/ArtisApp/artist-app";
 import LoginPage from "./pages/LoginPage/login-page";
 import RegisterPage from "./pages/RegisterPage/register-page";
+import axios from "axios";
+
+
+axios.defaults.baseURL = 'http://localhost:4000/';
+
+
+
 
 const App = () => {
   return (
