@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineCloudUpload } from "react-icons/ai";
-import "./added-new-asset.scss";
+import "./add-new-asset.scss";
 
-const AddedNewAsset = () => {
+const AddNewAsset = () => {
   {
     const [address, setAdress] = useState("");
     const [city, setCity] = useState("");
@@ -25,6 +25,10 @@ const AddedNewAsset = () => {
     const onChangeHandlerDescription = (event) => {
       setDescription(event.target.value);
     };
+
+    function addPhotoByLink () {
+
+    }
 
     return (
       <div className="all-form-body">
@@ -59,7 +63,7 @@ const AddedNewAsset = () => {
                 type="text"
                 value={photoLink}
                 onChange={onChangeHandlerPhotoLink}
-                placeholder={"add using a link.....jpg"}
+                placeholder={"Add using a link..."}
               />
               <button className="add-photo-btn">Add photo</button>
               <label className="store-photos">Add photo by link </label>
@@ -90,4 +94,4 @@ const AddedNewAsset = () => {
   }
 };
 
-export default AddedNewAsset;
+export default AddNewAsset;

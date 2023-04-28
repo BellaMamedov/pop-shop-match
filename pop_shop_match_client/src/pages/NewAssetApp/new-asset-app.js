@@ -1,13 +1,13 @@
 import React from "react";
 import "./new-asset-app.scss";
-import AddedNewAsset from '../../Components/AddedNewAsset/added-new-asset';
-import AddedNewAssetNavbar from "../../Components/NavBar/added-new-asset-navbar";
+import AddNewAsset from '../../Components/AddNewAsset/add-new-asset';
+import AddNewAssetNavbar from "../../Components/NavBar/add-new-asset-navbar";
 
 const NewAssetApp = () => {
   return (
     <>
-    <AddedNewAssetNavbar />
-   <AddedNewAsset />
+    <AddNewAssetNavbar />
+   <AddNewAsset />
     </>
   );
 };

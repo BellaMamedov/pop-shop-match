@@ -1,9 +1,9 @@
 import React from "react";
-import "./added-new-asset-navbar.scss";
+import "./add-new-asset-navbar.scss";
 import { MdDiversity2 } from "react-icons/md";
 
 
-const AddedNewAssetNavbar = () => {
+const AddNewAssetNavbar = () => {
 
 
   return (
@@ -19,4 +19,4 @@ const AddedNewAssetNavbar = () => {
   );
 };
 
-export default AddedNewAssetNavbar;
+export default AddNewAssetNavbar;
