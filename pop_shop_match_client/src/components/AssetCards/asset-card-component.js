@@ -16,7 +16,7 @@ const AssetCard = (props) => {
   } = props.asset;
 
   return (
-    <div key={props.key} className="single-asset">
+    <div key={props.id} className="single-asset">
       <div className="asset-img-div">
         <img src={storeImgUrl} alt={streetName} />
       </div>

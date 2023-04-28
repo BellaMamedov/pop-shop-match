@@ -12,7 +12,7 @@ const ArtistHomepage = () => {
        <video src={video} muted autoPlay loop type="video/mp4"></video>
       <div className="artist-home-content container">
         <div className="text-div">
-          <span className="small-text-slogan">Our stores</span>
+          <span className="small-text-slogan">Unleash your creativity and pop up with us</span>
           <h1 className="text-slogan">
           Search your Pop-Shop
           </h1>

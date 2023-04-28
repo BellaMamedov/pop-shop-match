@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import Logo from "./navbar-media/logo.png";
 import "./artist-navbar.scss";
 import { MdDiversity2 } from "react-icons/md";
 //import DateRangePicker from "./DatePicker/date-picker-component";
