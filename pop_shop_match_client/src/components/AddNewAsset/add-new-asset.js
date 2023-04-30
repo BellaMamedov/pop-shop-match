@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineCloudUpload } from "react-icons/ai";
+import axios from 'axios';
 import "./add-new-asset.scss";
 
 const AddNewAsset = () => {
@@ -26,8 +27,9 @@ const AddNewAsset = () => {
       setDescription(event.target.value);
     };
 
-    function addPhotoByLink () {
-
+    async function addPhotoByLink (event) {
+      event.preventDefault();
+await axios.post('/upload-by-link' , {link:photoLink});
     }
 
     return (
@@ -65,7 +67,7 @@ const AddNewAsset = () => {
                 onChange={onChangeHandlerPhotoLink}
                 placeholder={"Add using a link..."}
               />
-              <button className="add-photo-btn">Add photo</button>
+              <button onClick={addPhotoByLink} className="add-photo-btn">Add photo</button>
               <label className="store-photos">Add photo by link </label>
               <div className="add-photo-link-btn-div"></div>
             </div>

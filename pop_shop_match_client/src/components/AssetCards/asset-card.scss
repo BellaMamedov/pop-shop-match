@@ -68,12 +68,15 @@
       .icon {
         color: var(--textColor);
         font-size: 17px;
+        margin-right: 10px; 
+      
       }
 
       .city-name {
         color: var(--textColor);
         font-weight: 400;
         font-size: 16px;
+       
       }
     }
 
@@ -134,6 +137,7 @@
       .icon {
         align-self: center;
         font: size 18px;
+        color: var(--whiteColor);
       }
     }
 

@@ -161,6 +161,12 @@ text-decoration: underline;
     font-weight: 500;
     margin: 25px 0 15px;
   }
+  
+  .logreg-box p {
+    font-size: 1em;
+    color: var(--PrimaryColor);
+    font-weight: 600;
+  }
 
   .logreg-link p a {
     color: var(--whiteColor);
