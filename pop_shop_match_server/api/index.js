@@ -3,8 +3,9 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const User = require("./models/user");
-const { json } = require("body-parser");
+const bodyParser = require("body-parser");
 const jwt = require('jsonwebtoken');
+const imadeDownloader = require('image-downloader');
 require("dotenv").config();
 const app = express();
 
@@ -58,5 +59,17 @@ if(err) throw err;
     res.json("not found");
   }
 });
+
+
+
+app.post('/upload-by-link', async (req,res)=> {
+  const {link} = req.body;
+  const newName = Date.now() + '.jpg';
+  await imadeDownloader.image({
+    url:link,
+    dest: __dirname + '/uploads' + newName 
+  });
+  res.json(__dirname + '/uploads' + newName);
+})
 
 app.listen(4000);
