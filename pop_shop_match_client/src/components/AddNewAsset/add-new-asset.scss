@@ -16,23 +16,36 @@
   --cardBG: rgb(225, 225, 235);
 }
 
-.all-form-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+.new-asset-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 550px;
+  background: --;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.new-asset-form-container .all-form-body-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58%;
+  height: 100%;
   background: var(--bodyColor);
 }
 
-.new-asset-form-wrapper {
-  width: 780px;
-  height: 740px;
-  background: var(--blackColor);
-  border-radius: 20px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-left: 25px;
+.new-asset-form-container .form-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 58%);
+  height: 100%;
+  background: var(--PrimaryColor);
 }
 
 h2 {
@@ -47,7 +60,7 @@ p {
 }
 .input-box {
   position: relative;
-  width:700px;
+  width: 700px;
   margin: 30px 0px;
   border-bottom: 2px solid var(--whiteColor);
 }
@@ -110,7 +123,7 @@ p {
 .save-form-new-asset-btn {
   width: 90px;
   height: 40px;
-  background: var(--whiteColor);
+  background: var(--PrimaryColor);
   border: none;
   outline: none;
   border-radius: 40px;
