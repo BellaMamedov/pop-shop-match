@@ -1,6 +1,6 @@
 import React from "react";
 import "./artist-homepage.scss";
-import video from "../AssetCards/asset-card-media/stores-media/streetview.mp4";
+
 import { GrLocation } from "react-icons/gr";
 //import "react-multi-carousel/lib/styles.css";
 //import { Button } from "antd";
@@ -9,13 +9,19 @@ const ArtistHomepage = () => {
   return (
     <section className="artist-home">
       <div className="overlay"></div>
-       <video src={video} muted autoPlay loop type="video/mp4"></video>
+      <video
+        src="https://stage-popshopmatch.s3.eu-north-1.amazonaws.com/streetview.mp4"
+        muted
+        autoPlay
+        loop
+        type="video/mp4"
+      ></video>
       <div className="artist-home-content container">
         <div className="text-div">
-          <span className="small-text-slogan">Unleash your creativity and pop up with us</span>
-          <h1 className="text-slogan">
-          Search your Pop-Shop
-          </h1>
+          <span className="small-text-slogan">
+            Unleash your creativity and pop up with us
+          </span>
+          <h1 className="text-slogan">Search your Pop-Shop</h1>
         </div>
 
         <div className="asset-search-div grid">
@@ -31,7 +37,6 @@ const ArtistHomepage = () => {
             <label htmlFor="date">Select your date:</label>
             <div className="input flex">
               <input type="date" />
-              <GrLocation className="icon" />
             </div>
           </div>
           <div className="price-input">
@@ -47,7 +52,6 @@ const ArtistHomepage = () => {
       </div>
     </section>
   );
-}
+};
 
 export default ArtistHomepage;
-
