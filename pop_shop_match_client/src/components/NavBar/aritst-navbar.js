@@ -21,7 +21,7 @@ const ArtistNavbar = () => {
       <header className="artist-header grid">
         <div className="logo-div">
           <a href="/" className="logo flex">
-            <h1><MdDiversity2 className="icon" /> PoPShopMatch.</h1>
+            <h1><MdDiversity2 className="icon" /> PopShopMatch.</h1>
           </a>
         </div>
 
@@ -34,7 +34,7 @@ const ArtistNavbar = () => {
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link">
-                About
+                How it works?
               </a>
             </li>
             <li className="nav-item">

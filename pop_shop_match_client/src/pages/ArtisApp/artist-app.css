@@ -13,7 +13,7 @@
 :root {
   --PrimaryColor: hsl(199, 100%, 33%);
   --SecondaryColor: hsl(187, 85%, 43%);
-  --gradientColor: liner-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(201, 33%, 16%);
   --textColor: hsl(240, 4%, 36%);
@@ -24,9 +24,9 @@
   --cardBG: rgb(225, 225, 235);
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 a {
   text-decoration: none;
@@ -61,7 +61,7 @@ li {
 }
 
 .btn {
-  padding: .3rem 1.2rem;
+  padding: .6rem 1.5rem;
   background: var(--blackColor);
   border-radius: 3rem;
   border: none;
@@ -75,7 +75,7 @@ li {
 }
 
 .btn:hover {
-  background: var(--PrimaryColor);
+  background: var(--textColor);
 }
 
 img,
