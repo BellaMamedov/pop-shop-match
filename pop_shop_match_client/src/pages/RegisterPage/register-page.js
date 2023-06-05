@@ -5,7 +5,6 @@ import { AiOutlineGoogle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import axios from 'axios';
-import video from "../../Components/AssetCards/asset-card-media/stores-media/streetview.mp4";
 import "./register-page.scss";
 
 const RegisterPage = () => {
@@ -41,7 +40,7 @@ password
   return (
     <section className="register-section">
       <video className="register-video" autoPlay muted loop>
-        <source src={video} type="video/mp4" />
+        <source src="https://stage-popshopmatch.s3.eu-north-1.amazonaws.com/streetview.mp4" type="video/mp4" />
       </video>
       <div className="register-warpper">
         <div className="logreg-box">

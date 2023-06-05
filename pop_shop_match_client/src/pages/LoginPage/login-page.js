@@ -3,7 +3,6 @@ import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineUnlock } from "react-icons/ai";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
-import video from "../../Components/AssetCards/asset-card-media/stores-media/streetview.mp4";
 import "./login-page.scss";
 import axios from "axios";
 import { Navigate } from "react-router-dom";
@@ -39,7 +38,7 @@ const LoginPage = () => {
   return (
     <section className="login-section">
       <video className="login-video" autoPlay muted loop>
-        <source src={video} type="video/mp4" />
+        <source src="https://stage-popshopmatch.s3.eu-north-1.amazonaws.com/streetview.mp4" type="video/mp4" />
       </video>
       <div className="login-warpper">
         <div className="logreg-box">
