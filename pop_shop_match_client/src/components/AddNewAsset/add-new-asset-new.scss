@@ -1,0 +1,181 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --geryText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --colorOne: rgb(194, 222, 220);
+  --colorTwo: rgb(236, 229, 199);
+  --colorThree: rgb(205, 194, 174);
+  --colorFour: rgb(252, 200, 209);
+  --creamColor: rgb(249, 245, 246);
+}
+
+.all-add-new-asset {
+  
+.all-form {
+  width: 100%;
+}
+  .add-new-asset {
+    .section-container {
+      .title-div {
+        text-align: center;
+        h1 {
+          letter-spacing: 0.8rem;
+          text-transform: uppercase;
+          font-size: 13px;
+          color: var(--blackColor);
+          line-height: 1.5rem;
+        }
+        p {
+          color: var(--textColor);
+        }
+      }
+
+      .info-div {
+        margin-top: 2rem;
+        gap: 1.5rem;
+
+        .text-div {
+          gap: 1.5rem;
+
+          .single-info {
+            .number {
+              background: var(--PrimaryColor);
+              padding: 5px 17px;
+              width: 40px;
+              border-radius: 3rem;
+              text-align: center;
+              font-size: 13px;
+              font-weight: 700;
+              color: var(--whiteColor);
+            }
+
+            h4 {
+              padding-top: 15px;
+              font-size: 17px;
+            }
+
+            .color-one {
+              background: var(--colorOne);
+            }
+
+            .color-two {
+              background: var(--colorTwo);
+            }
+
+            .color-three {
+              background: var(--colorThree);
+            }
+
+            .color-four {
+              background: var(--colorFour);
+            }
+          }
+        }
+        .input-box {
+          position: relative;
+          width: 700px;
+          margin: 15px 0px;
+          border-bottom: 2px solid var(--whiteColor);
+        }
+
+        .input-box input:focus ~ label .input-box input:valid ~ label {
+          top: -5px;
+        }
+
+        .input-box input {
+          width: 100%;
+          height: 40px;
+          background: transparent;
+          outline: none;
+          font-size: 1em;
+          color: var(--blackColor);
+          padding: 0 35px 0 5px;
+        }
+
+        .input-box .add-photo-btn {
+          position: absolute;
+          right: 8px;
+          color: var(--whiteColor);
+          background: var(--blackColor);
+          padding: 0.1rem 0.9rem;
+          line-height: 2rem;
+          border-radius: 3rem;
+          border: none;
+          outline: none;
+          cursor: pointer;
+        }
+
+        .upload-photos-btn {
+          width: 45%;
+          right: 8px;
+          background: var(--blackColor);
+          color: var(--whiteColor);
+          padding: 0.1rem 0.9rem;
+          line-height: 2rem;
+          border-radius: 1rem;
+          border: none;
+          outline: none;
+          cursor: pointer;
+        }
+        .icon {
+          font-size: 25px;
+          color: var(--whiteColor);
+          transform: translateX(6px);
+          transform: translateX(10px);
+        }
+
+        .text-area {
+         margin: 15px;
+          font-size: 14px;
+          border: none;
+          border-radius: 12px;
+          background: var(--creamColor);
+        }
+        .save-form-new-asset-btn {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: var(--blackColor);
+          color: #ffffff;
+          border: none;
+          border-radius: 80px;
+          width: 80%;
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--textColor);
+          }
+
+          &:active {
+            background-color: var(--PrimaryColor);
+          }
+
+          &:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+          }
+        }
+
+        .add-new-asset-img-container {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+
+

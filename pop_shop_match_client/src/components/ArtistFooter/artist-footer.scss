@@ -122,7 +122,6 @@
       flex-direction: column;
       align-items: flex-start;
       overflow: hidden;
-     
 
       .artist-footer-intro {
         flex-basis: 50%;
@@ -169,7 +168,6 @@
         gap: 1rem;
         justify-content: space-around;
         align-items: flex-start;
-       
 
         .link-group {
           .group-title {
@@ -177,7 +175,6 @@
             font-weight: 600;
             color: var(--blackColor);
             margin-bottom: 0.5rem;
-            
           }
 
           .artist-footer-list {
@@ -190,6 +187,9 @@
               color: var(--geryText);
             }
 
+            a[href="/add-new-asset"] {
+              color: var(--blackColor) !important;
+            }
             &:hover {
               color: var(--PrimaryColor);
               transform: translateX(7px);
@@ -265,15 +265,14 @@
       .artist-footer-card {
         padding: 3rem 1rem;
 
-        .artist-footer-intro{
-          .artist-footer-paragraph{
+        .artist-footer-intro {
+          .artist-footer-paragraph {
             font-size: 15px;
             color: var(--textColor);
 
-
-            .artist-footer-links{
-              .link-group{
-                .artist-footer-list{
+            .artist-footer-links {
+              .link-group {
+                .artist-footer-list {
                   font-size: 16px;
                   padding: 5px 0;
                 }
