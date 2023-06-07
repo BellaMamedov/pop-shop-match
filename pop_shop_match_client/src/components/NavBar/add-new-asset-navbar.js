@@ -11,7 +11,7 @@ const AddNewAssetNavbar = () => {
       <header className="add-new-asset-header grid">
         <div className="logo-div">
           <a href="/" className="logo flex">
-            <h1><MdDiversity2 className="icon" /> PoPShopMatch.</h1>
+            <h1><MdDiversity2 className="icon" /> PopShopMatch.</h1>
           </a>
         </div>
       </header>

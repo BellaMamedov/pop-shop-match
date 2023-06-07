@@ -35,8 +35,6 @@ const AddNewAsset = () => {
     return (
       <div className="new-asset-form-container">
         <div className="all-form-body-content">
-
-
           <h2>Let's get started listing your space.</h2>
           <form>
             <p>Your space characteristics</p>

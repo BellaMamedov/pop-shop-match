@@ -51,9 +51,11 @@ const ArtistFooter = () => {
             <div className="link-group">
               <span className="group-title"> GENERAL</span>
               <li className="artist-footer-list flex">
-                {/* <FiChevronRight className="icon" /> */}
-                Listing your space
-              </li>
+  <a href="/add-new-asset">
+    {/* <FiChevronRight className="icon" /> */}
+    Listing your space
+  </a>
+</li>
             </div>
             {/*Group two */}
             <div className="link-group">
