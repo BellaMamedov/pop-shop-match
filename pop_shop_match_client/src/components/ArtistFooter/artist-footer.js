@@ -14,7 +14,7 @@ const ArtistFooter = () => {
       <div className="sec-content container">
         <div className="contact-div flex">
           <div className="text">
-            <small>CANT FIND YOUR SAPCE?</small>
+            <small>CANT FIND YOUR SPACE?</small>
             <h2>Contat us</h2>
           </div>
           <div className="input-div flex">

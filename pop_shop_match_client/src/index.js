@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage/login-page";
 import RegisterPage from "./pages/RegisterPage/register-page";
 import NewAssetApp from "./pages/NewAssetApp/new-asset-app";
 import axios from "axios";
+import AssetPage from "./pages/SingleAssetApp/asset-page";
 
 
 axios.defaults.baseURL = 'http://127.0.0.1:4000/';
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/add-new-asset" element={<NewAssetApp />} />
+        <Route path="/asset-page" element={<AssetPage />} />
       </Routes>
     </BrowserRouter>
   );
