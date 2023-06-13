@@ -5,6 +5,7 @@ const assetSchema = new mongoose.Schema({
     city: String,
     photos: [String],
     description: String,
+    perks:[string],
 
 });
 
