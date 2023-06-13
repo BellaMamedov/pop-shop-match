@@ -44,7 +44,7 @@ const AssetCard = (props) => {
           </div>
         </div>
           <div className="price">
-            <h5 className="cost-per-day-price">{costPerDay}</h5>
+            <h5 className="cost-per-day-price">{costPerDay}₪</h5>
             <h3 className="cost-per-day-title">PER DAY</h3> 
           </div>
         </div>
