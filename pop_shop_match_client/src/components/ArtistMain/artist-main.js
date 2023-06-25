@@ -2,6 +2,7 @@ import React from "react";
 import "./artist-main.scss";
 import { assetCardData } from "../AssetCards/asset-card-data";
 import AssetCard from "../AssetCards/asset-card-component";
+import NoResults  from "./no-results-found-page";
 
 const ArtistMain = (props) => {
   let isShowNoResult = true;
@@ -14,7 +15,7 @@ const ArtistMain = (props) => {
     }
 
     isShowNoResult = false;
-    
+
     return <AssetCard key={asset.id} asset={asset} />;
   });
 
@@ -27,9 +28,9 @@ const ArtistMain = (props) => {
       <div className="sec-content grid">
         {assets}
         {isShowNoResult ? (
-          <div style={{ textAlign: "center" }}>
-            <h1>No Results!</h1>
-          </div>
+        
+            <NoResults />
+         
         ) : (
           ""
         )}

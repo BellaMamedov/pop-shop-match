@@ -112,12 +112,12 @@
 
         .icon {
           font-size: 18px;
-          color: var(--PrimaryColor) !important;
+          color: var(--SecondaryColor) !important;
           margin-left: 10px;
         }
 
         .input[type="range"] {
-          background: blue;
+          background: rgb(28, 123, 136);
         }
       }
     }
