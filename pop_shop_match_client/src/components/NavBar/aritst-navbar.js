@@ -28,7 +28,7 @@ const ArtistNavbar = () => {
         <div className={active}>
           <ul className="nav-lists flex">
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="/find-a-space" className="nav-link">
                Find a space
               </a>
             </li>

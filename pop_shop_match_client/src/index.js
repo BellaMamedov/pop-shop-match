@@ -8,6 +8,7 @@ import RegisterPage from "./pages/RegisterPage/register-page";
 import NewAssetApp from "./pages/NewAssetApp/new-asset-app";
 import axios from "axios";
 import AssetPage from "./pages/SingleAssetApp/asset-page";
+import FindSpaceApp from "./pages/FindSpaceApp/find-space-app";
 
 
 axios.defaults.baseURL = 'http://127.0.0.1:4000/';
@@ -25,6 +26,8 @@ const App = () => {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/add-new-asset" element={<NewAssetApp />} />
         <Route path="/asset-page" element={<AssetPage />} />
+        <Route path="/find-a-space" element={<FindSpaceApp />} />
+        
       </Routes>
     </BrowserRouter>
   );
