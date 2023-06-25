@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./artist-homepage.scss";
-
+import { assetCardData } from "../AssetCards/asset-card-data";
 import { GrLocation } from "react-icons/gr";
 //import "react-multi-carousel/lib/styles.css";
 //import { Button } from "antd";
 
-const ArtistHomepage = () => {
+
+
+const ArtistHomepage = (props) => {
+  
+
   return (
     <section className="artist-home">
       <div className="overlay"></div>
@@ -28,11 +32,12 @@ const ArtistHomepage = () => {
           <div className="destination-input">
             <label htmlFor="city">Discover the top cities</label>
             <div className="input flex">
-              <input type="text" placeholder="Enter city here... " />
+              <input type="text" placeholder="Enter city here... " value={props.cityFilter}
+        onChange={props.setCityNameValue}/>
               <GrLocation className="icon" />
             </div>
           </div>
-
+   
           <div className="date-input">
             <label htmlFor="date">Select your date:</label>
             <div className="input flex">
@@ -41,11 +46,19 @@ const ArtistHomepage = () => {
           </div>
           <div className="price-input">
             <div className="lable-total flex">
-              <label htmlFor="price">Max price:</label>
-              <h3 className="total">5000₪</h3>
+              <label htmlFor="price">Max price/day:</label>
+              <h3 className="total">{props.priceFilter}₪</h3>
             </div>
             <div className="input flex">
-              <input type="range" max="5000" min="1000" />
+              <input
+                type="range"
+                name="price"
+                max="1000"
+                min="10"
+                onChange={props.setPriceRangeValue}
+                value={props.priceFilter}
+                step={5}
+              />
             </div>
           </div>
         </div>
