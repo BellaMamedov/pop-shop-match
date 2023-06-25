@@ -9,11 +9,7 @@ import { GrLocation } from "react-icons/gr";
 
 const ArtistHomepage = (props) => {
   
-// const [searchTerm, setSearchTerm]=useState("");
 
-// const onChangeCityValue = (event) => {
-//   setSearchTerm(event.target.value);
-// }
   return (
     <section className="artist-home">
       <div className="overlay"></div>
@@ -36,20 +32,12 @@ const ArtistHomepage = (props) => {
           <div className="destination-input">
             <label htmlFor="city">Discover the top cities</label>
             <div className="input flex">
-              <input type="text" placeholder="Enter city here... "/>
+              <input type="text" placeholder="Enter city here... " value={props.cityFilter}
+        onChange={props.setCityNameValue}/>
               <GrLocation className="icon" />
             </div>
           </div>
-          {/*
-            assetCardData.filter((val) => {
-              if(searchTerm == ""){
-                return val;
-              } else if (val.storeCity.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
-                return val;
-              }
-            })
-          */}
-
+   
           <div className="date-input">
             <label htmlFor="date">Select your date:</label>
             <div className="input flex">

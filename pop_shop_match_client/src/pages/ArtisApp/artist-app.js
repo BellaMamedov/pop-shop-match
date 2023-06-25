@@ -9,13 +9,24 @@ const ArtistApp = () => {
   const setPriceRangeValue = (event) => {
     let newPriceValue = event.target.value;
     setPriceFilter(newPriceValue);
-  }
+}
+    const [cityFilter, setCityFilter] = useState("");
+    const setCityNameValue = (event) => {
+      let newCityValue = event.target.value;
+      setCityFilter(newCityValue);
+    }
+  
 
   return (
     <>
       <ArtistNavbar />
-      <ArtistHomepage priceFilter={priceFilter} setPriceRangeValue={setPriceRangeValue} />
-      <ArtistMain priceFilter={priceFilter} />
+      <ArtistHomepage
+        priceFilter={priceFilter}
+        setPriceRangeValue={setPriceRangeValue}
+        cityFilter={cityFilter}
+        setCityNameValue={setCityNameValue}
+      />
+      <ArtistMain priceFilter={priceFilter} cityFilter={cityFilter} />
       <ArtistFooter />
     </>
   );

@@ -6,11 +6,15 @@ import AssetCard from "../AssetCards/asset-card-component";
 const ArtistMain = (props) => {
   let isShowNoResult = true;
   const assets = assetCardData.map((asset) => {
-    if (asset.costPerDay > props.priceFilter) {
+    if (
+      asset.costPerDay > props.priceFilter ||
+      !asset.storeCity.toLowerCase().includes(props.cityFilter.toLowerCase())
+    ) {
       return null;
     }
 
     isShowNoResult = false;
+    
     return <AssetCard key={asset.id} asset={asset} />;
   });
 
@@ -22,7 +26,13 @@ const ArtistMain = (props) => {
 
       <div className="sec-content grid">
         {assets}
-        {isShowNoResult ? <div style={{ textAlign: "center" }}><h1>No Results!</h1></div> : ""}
+        {isShowNoResult ? (
+          <div style={{ textAlign: "center" }}>
+            <h1>No Results!</h1>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </section>
   );
