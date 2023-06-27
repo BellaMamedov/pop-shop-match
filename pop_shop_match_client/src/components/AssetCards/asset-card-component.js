@@ -1,8 +1,9 @@
 import React from "react";
 import "./asset-card.scss";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import {HiOutlineClipboardCheck} from "react-icons/hi";
+// import {HiOutlineClipboardCheck} from "react-icons/hi";
 import {MdPhoneInTalk} from 'react-icons/md';
+import {AiOutlineHeart} from 'react-icons/ai';
 import {BsFillChatFill} from 'react-icons/bs';
 import {IoMail} from 'react-icons/io5';
 const AssetCard = (props) => {
@@ -48,9 +49,17 @@ const AssetCard = (props) => {
             <h3 className="cost-per-day-title">PER DAY</h3> 
           </div>
         </div>
+        <div className="btn-container flex">
         <button className="btn flex">
-DETAILS <HiOutlineClipboardCheck className="icon"/>
+ {/* <HiOutlineClipboardCheck className="icon"/> */}
+<a href="/asset">Details</a>
         </button>
+
+        <button className="love-btn">
+<AiOutlineHeart className="love-icon"/> 
+<a href="/asset"></a>
+        </button>
+        </div>
       </div>
     </div>
   );
